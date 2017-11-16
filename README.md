@@ -1,10 +1,15 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
-## How to use this template
+# English words
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
+Based on ionic cli.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
+NPM tasks
+
+*Clean* - npm run ionic:clean - ionic-app-scripts clean,
+*Build* - npm run ionic:build - ionic-app-scripts build,
+*Serve* - npm run ionic:serve -  ionic-app-scripts serve
+
+
 
 ### With the Ionic CLI:
 
