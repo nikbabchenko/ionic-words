@@ -22,7 +22,7 @@ export class WordsService {
     }
 
     getNewId(){
-        return this.db.database.ref().push();
+        return this.db.app.database().ref().push();
     }
 
     deleteWord(wordId){
