@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Search</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar (ionInput)="getItems($event)" autofocus></ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let item of itemsList" (click)="itemSelected(item)">
+      {{ item.name | capitalizeLetter}}
+    </button>
+  </ion-list>
+</ion-content>

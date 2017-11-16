@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add New Word</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #f="ngForm" novalidate>
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Word</ion-label>
+        <ion-input type="text" name="name"  [(ngModel)]="word.name" required autofocus (keydown)="error = ''"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Translation</ion-label>
+        <ion-input type="text" name="translate" [(ngModel)]="word.translate" (keydown)="error = ''" required></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="text-error" *ngIf="error">{{ error }}</div>
+    <div padding>
+      <button ion-button full (click)="addNewItem()" [disabled]="isSubmitDisabled()" color="{{ isSubmitDisabled() ? 'light' : 'default' }}">Add New</button>
+      <button ion-button full (click)="reset()" color="danger">Reset</button>
+    </div>
+  </form>
+</ion-content>

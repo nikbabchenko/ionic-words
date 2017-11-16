@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Edit Word</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #f="ngForm" novalidate>
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Word</ion-label>
+        <ion-input type="text" name="name" [(ngModel)]="word.name" required autofocus></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Translation</ion-label>
+        <ion-input type="text" name="translate" [(ngModel)]="word.translate" required></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button full (click)="changeItem()" [disabled]="isSubmitDisabled()" color="{{ isSubmitDisabled() ? 'light' : 'default' }}">Save</button>
+    </div>
+  </form>
+</ion-content>
