@@ -5,9 +5,11 @@ Based on ionic cli.
 
 NPM tasks
 
-*Clean* - npm run ionic:clean - ionic-app-scripts clean,
-*Build* - npm run ionic:build - ionic-app-scripts build,
-*Serve* - npm run ionic:serve -  ionic-app-scripts serve
+``` bash
+Clean - $ npm run ionic:clean
+Build - $ npm run ionic:build
+Serve - $ npm run ionic:serve
+```
 
 
 
